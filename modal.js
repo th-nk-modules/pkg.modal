@@ -12,10 +12,10 @@ class Modal {
     /**
      * @constructor
      */
-    constructor() {
+    constructor(modals,triggers) {
 
-        this.modals = document.querySelectorAll('.modal');
-        this.triggers = document.querySelectorAll('.modal-trigger');
+        this.modals = modals || document.querySelectorAll('.modal');
+        this.triggers = triggers || document.querySelectorAll('.modal-trigger');
         
         //Add open events to triggers
         for (var i = 0; i < this.triggers.length; i++){
